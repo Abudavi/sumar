@@ -1,0 +1,22 @@
+<h1 class="text-center text-warning">{{titulo}}</h1>
+<div class="container ">
+    <div class="d-flex flex-column mb-3 justify-content-center align-items-center">
+        <div class="mb-3">
+            <label class="p-3" for="numero1">Ingrese un numero</label>
+            <input id="numero1" type="number" [(ngModel)]="input1" placeholder="Número 1">
+        </div>
+        <div class="mb-3">
+            <label class="p-3" for="numero2">Ingrese un numero</label>
+            <input type="number" name="" id="numero2"  [(ngModel)]="input2" placeholder="Número 2">
+        </div>
+        <div class="mb-3">
+            <button  class="btn btn-primary w-100" type="button" (click)="sumar(input1,input2)">Sumar</button>
+        </div>
+        <div class="alert alert-success text-center ">
+            <h2>Resultado: {{resultado}}</h2>
+    
+        </div>
+    </div>
+
+
+</div>
