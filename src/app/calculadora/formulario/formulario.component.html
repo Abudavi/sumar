@@ -1,0 +1,15 @@
+<div class="container mb-3 text-center">
+    <h1 class="text-warning">{{ titulo }}</h1>
+    <div class="container ">
+        <label for="inputA">Operador A</label>
+        <input class="form-control mb-3 w-auto" type="number" name="inputA" #inputA id="inputA"
+            placeholder="Ingrese un numero" [(ngModel)]="operadorA" />
+
+        <label for="inputB">Operador B</label>
+        <input class="form-control mb-3 w-auto" type="number" name="inputB" id="inputB" #inputB
+            placeholder="Ingrese un numero" [(ngModel)]="operadorB" />
+        <button class="btn btn-primary mb-3" type="button" (click)="sumar(); inputA.value='';inputB.value='';">
+            Sumar
+        </button>
+    </div>
+</div>
